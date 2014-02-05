@@ -1,11 +1,84 @@
 body {
 	width: 1280px;
 	height: 750px;
-	background-color: red;
-	color: white;
+	background-color: #FFF7BC;
+	background: url('/Users/aaronpiotrowski/Dropbox/Public/HotorCold/images/stardust.png') repeat;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+nav {
+    margin: 10px auto;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    margin-left: 150px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    text-align: center;
+}
+
+hr {
+    margin-top: 25px;
+    border: 3px solid;
 }
 
 table {
 	margin: 0 auto;
+    float: left;
+    margin-top: 25px;
+    margin-left: 225px;
+    border: 10px solid white;
 }
 
+td {
+    margin: 18px;
+    padding: 18px;
+    border: 1px solid white;
+}
+
+#sampleHot {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: red;
+    float: left;
+    margin-left: 125px;
+}
+
+#sampleHot p {
+    font-size: 14px;
+}
+
+#sampleCold {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: blue;
+    clear: both;
+    margin-top: 75px;
+    margin-left: 125px;
+}
+
+#sampleCold {
+    font-size: 14px;
+}
+
+#sampleWin {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: green;
+    margin-left: 125px;
+}
+
+#sampleWin {
+    font-size: 14px;
+}

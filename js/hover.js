@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-	$("#numberChart").hover(function() { 
-		$('td').css("background-color","grey");});
-
-
+	$("#numberChart td").hover
+    (function() {$(this).css("background-color","purple");});
+    
 });
