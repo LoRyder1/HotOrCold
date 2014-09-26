@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Choose a Number</title>
 		<meta charset="utf-8">
+		<title>Number Game</title>
 		<link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<header>
-			<nav>
-                <button>New Game</button>
-			</nav>
-		</header>
-		<aside>
-			<h2>Pick a number between 1 and 100</h2>
-			<p>The computer has a chosen a number. See how many attempts it takes for you to guess it. Click on a number if the box turns <span>red</span> you are very close to the number. If it turns <span>blue</span> you are far away from the number.</p>
-			<div id="sampleHot"><p>HOTTER</p></div>
-			<div id="sampleCold"><p>COLDER</p></div>
-            <p>When you click the correct box, a <span>green</span> square will appear on it. Congradulations you've won. To reset the board click the "New Game" button in the top left corner.</p>
-            <div id="sampleWin"><p>WINNER</p></div>
-            <hr><hr><hr>
-		</aside>
+		<div class='container'>
+			<aside>
+				<h2>Pick a number between 1 and 100</h2>
+				<p>The computer has a chosen a number. You have 5 attempts to guess it. Click on a number if the box turns <span>red</span> you are very close to the number. If it turns <span>blue</span> you are far away from the number.</p>
+				<div id="sampleHot"><p>HOTTER</p></div>
+				<div id="sampleCold"><p>COLDER</p></div>
+	            <p>When you click the correct box, a <span>green</span> square will appear on it. Congradulations you've won.</p>
+	            <div id="sampleWin"><p>WINNER</p></div>
+	            <hr><hr><hr>
+	      <div id='remaining_guesses'>
+	      	<h2>Number of Guesses Remaining: <span class='num_remaining'>5</span></h2>
+	      </div>
+				<div class='button'>
+	      	<a href="javascript:location.reload(true)">New Game</a>
+				</div>
+			</aside>
 		<section>
 			<div id="numberChart">
 				<table>
@@ -147,6 +149,7 @@
 				</table>
 			</div>
 		</section>
+	</div>
 	<!-- JavaScript / jQuery -->
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/hover.js"></script>

@@ -1,14 +1,32 @@
 body {
-	width: 1280px;
-	height: 750px;
+    width: 1280px;
+    height: 750px;
 	background-color: #FFF7BC;
-	background: url('/Users/aaronpiotrowski/Dropbox/Public/HotorCold/images/stardust.png') repeat;
+	background: url('../images/stardust.png') repeat;
     color: white;
     font-family: 'Abel', sans-serif;
 }
 
-nav {
-    margin: 10px auto;
+.container {
+    top: 50%;
+    left: 50%;
+}
+
+.button {
+    width: 96%;
+    margin: 30px auto 10px;
+    text-align: center;
+}
+
+.button a {
+    position: relative;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #d35400;
+    border: 3px solid #ecf0f1;
+    border-radius: 23px;
+    padding: 10px;
+    margin: 35px auto;
 }
 
 aside {
@@ -44,11 +62,16 @@ td {
     border: 1px solid white;
 }
 
+/* Class for .hover() */
+.purple {
+    background-color: #9b59b6;
+}
+
 #sampleHot {
     height: 50px;
     width: 50px;
     border: 2px solid white;
-    background-color: red;
+    background-color: #c0392b;
     float: left;
     margin-left: 125px;
 }
@@ -61,7 +84,7 @@ td {
     height: 50px;
     width: 50px;
     border: 2px solid white;
-    background-color: blue;
+    background-color: #2980b9;
     clear: both;
     margin-top: 75px;
     margin-left: 125px;
@@ -75,7 +98,7 @@ td {
     height: 50px;
     width: 50px;
     border: 2px solid white;
-    background-color: green;
+    background-color: #27ae60;
     margin-left: 125px;
 }
 
