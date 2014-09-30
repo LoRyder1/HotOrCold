@@ -5,10 +5,5 @@ $(document).ready(function() {
 	}, function(){
 		$(this).removeClass("purple");
 	});
-
-	$('td').on('click', function(event){
-		var value = this.innerText;
-		console.log(value);
-	});
     
 });
