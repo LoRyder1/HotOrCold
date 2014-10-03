@@ -30,12 +30,21 @@ $(document).ready(function() {
     var top = position["top"] + 45
     var left = position["left"] - 555
 
-    console.log(top)
-    console.log(left)
-    console.log(computerNumber)
-    console.log(position)
+    var center = $("#"+computerNumber+"")
+    var centerposition = $("#"+computerNumber+"").position()
 
-    $("#tabla").css("background-image", "radial-gradient(farthest-corner at "+left+"px "+top+"px , #FF0000 10%, #0000FF 100%)");
+    var topcenter = centerposition["top"] + 45
+    var leftcenter = centerposition["left"] - 555
+
+
+    // console.log(top)
+    // console.log(left)
+    console.log(computerNumber)
+    // console.log(position)
+    console.log(center)
+    console.log(centerposition)
+
+    $("#tabla").css("background-image", "radial-gradient(farthest-corner at "+leftcenter+"px "+topcenter+"px , #FF0000 10%, #0000FF 100%)");
 
 
     // if((value >= (computerNumber + 6)) || (value <= (computerNumber - 6))){
