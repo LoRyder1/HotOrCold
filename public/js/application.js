@@ -45,6 +45,8 @@ $(document).ready(function() {
     console.log(centerposition)
 
     $("#tabla").css("background-image", "radial-gradient(farthest-corner at "+leftcenter+"px "+topcenter+"px , #FF0000 10%, #0000FF 100%)");
+    // $("tabla").css("background-image", "display: none")
+    $("#tabla").css('background-image', 'none');
 
 
     // if((value >= (computerNumber + 6)) || (value <= (computerNumber - 6))){
@@ -57,22 +59,22 @@ $(document).ready(function() {
     //   $('.num_remaining').html(clickCount);
     // }
 
-    // if(value < computerNumber){
-    //   var num = (computerNumber-value);
-    //   console.log(computerNumber)
+    if(value < computerNumber){
+      var num = (computerNumber-value);
+      console.log(computerNumber)
 
-    //   $(this).css("background", "linear-gradient(to right, #1e5799 0%,blue " + num + "%, red 100%)");
-    //   clickCount -= 1;
-    //   $('.num_remaining').html(clickCount);
+      $(this).css("background", 
+      clickCount -= 1;
+      $('.num_remaining').html(clickCount);
 
-    //   } else if(value > computerNumber){
-    //   var num = Math.abs((computerNumber-value));
-    //   console.log(computerNumber);
+      } else if(value > computerNumber){
+      var num = Math.abs((computerNumber-value));
+      console.log(computerNumber);
 
-    //   $(this).css("background", "linear-gradient(to right, #1e5799 0%,red " + num + "%, blue 100%)");
-    //   clickCount -= 1;
-    //   $('.num_remaining').html(clickCount);
-    //   }
+      // $(this).css("background", "linear-gradient(to right, #1e5799 0%,red " + num + "%, blue 100%)");
+      clickCount -= 1;
+      $('.num_remaining').html(clickCount);
+      }
 
   });
 
