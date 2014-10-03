@@ -12,7 +12,7 @@ $(document).ready(function() {
   var clickCount = 10;
 
   var clickedVal = $('td').on('click', function(event){
-    console.log(this.innerText);
+    // console.log(this.innerText);
     var value = this.innerText;
 
     if(value == computerNumber){
@@ -26,6 +26,18 @@ $(document).ready(function() {
       location.reload();
     }
 
+    var position = $(this).position()
+    var top = position["top"] + 45
+    var left = position["left"] - 555
+
+    console.log(top)
+    console.log(left)
+    console.log(computerNumber)
+    console.log(position)
+
+    $("#tabla").css("background-image", "radial-gradient(farthest-corner at "+left+"px "+top+"px , #FF0000 10%, #0000FF 100%)");
+
+
     // if((value >= (computerNumber + 6)) || (value <= (computerNumber - 6))){
     //   $(this).css("background-color", "linear-gradient(to right, #1e5799 0%,blue 0%, red 100%)");
     //   clickCount -= 1;
@@ -36,22 +48,22 @@ $(document).ready(function() {
     //   $('.num_remaining').html(clickCount);
     // }
 
-    if(value < computerNumber){
-      var num = (computerNumber-value);
-      console.log(computerNumber)
+    // if(value < computerNumber){
+    //   var num = (computerNumber-value);
+    //   console.log(computerNumber)
 
-      $(this).css("background", "linear-gradient(to right, #1e5799 0%,blue " + num + "%, red 100%)");
-      clickCount -= 1;
-      $('.num_remaining').html(clickCount);
+    //   $(this).css("background", "linear-gradient(to right, #1e5799 0%,blue " + num + "%, red 100%)");
+    //   clickCount -= 1;
+    //   $('.num_remaining').html(clickCount);
 
-      } else if(value > computerNumber){
-      var num = Math.abs((computerNumber-value));
-      console.log(computerNumber);
+    //   } else if(value > computerNumber){
+    //   var num = Math.abs((computerNumber-value));
+    //   console.log(computerNumber);
 
-      $(this).css("background", "linear-gradient(to right, #1e5799 0%,red " + num + "%, blue 100%)");
-      clickCount -= 1;
-      $('.num_remaining').html(clickCount);
-      }
+    //   $(this).css("background", "linear-gradient(to right, #1e5799 0%,red " + num + "%, blue 100%)");
+    //   clickCount -= 1;
+    //   $('.num_remaining').html(clickCount);
+    //   }
 
   });
 

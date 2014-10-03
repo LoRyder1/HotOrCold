@@ -8,8 +8,8 @@ display: none;
 
 
 table {
-    background-image: radial-gradient(farthest-corner at 45px 45px , #FF0000 0%, #0000FF 100%);
-    background-image: none; 
+/*    background-image: radial-gradient(farthest-corner at 45px 45px , #FF0000 10%, #0000FF 100%);
+*/    /*background-image: none; */
 }
 
 body {
@@ -47,6 +47,7 @@ aside {
     float: left;
     width: 300px;
     margin-left: 150px;
+    margin-right: 150px;
 }
 
 aside h2 {
@@ -65,8 +66,8 @@ hr {
 table {
 	margin: 0 auto;
     float: left;
-    margin-top: 25px;
-    margin-left: 225px;
+/*    margin-top: 25px;
+    margin-left: 225px;*/
     border: 10px solid white;
 }
 
